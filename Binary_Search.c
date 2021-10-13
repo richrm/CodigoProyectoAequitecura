@@ -24,7 +24,7 @@ int binarySearch(int *arr, int l, int r, int x)
   
         // If element is smaller than mid, then it can only be present
         // in left subarray
-        if (arr[mid] > x) return binarySearch(arr, l, mid-1, x);
+        if ( x < arr[mid]) return binarySearch(arr, l, mid-1, x);
         // Else the element can only be present in right subarray
         return binarySearch(arr, mid+1, r, x);
    }
@@ -36,7 +36,7 @@ int binarySearch(int *arr, int l, int r, int x)
 int main(void)
 {
    int n = 10;
-   int x = 30;
+   int x = 10;
    int result = binarySearch(arr, 0, n-1, x);
    printf("result %d", result);
    return 0;

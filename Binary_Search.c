@@ -1,5 +1,4 @@
 
-#include<stdio.h>
 int arr []= {2,3,4,10,20,30,40,50,70,100};
 // A recursive binary search function. It returns location of x in
 // given array arr[l..r] is present, otherwise -1
@@ -38,6 +37,5 @@ int main(void)
    int n = 10;
    int x = 10;
    int result = binarySearch(arr, 0, n-1, x);
-   printf("result %d", result);
    return 0;
 }
